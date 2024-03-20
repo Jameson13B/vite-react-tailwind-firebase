@@ -1,33 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Atomic10Logo from './assets/atomic10-logo.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://atomic10.studio" target="_blank">
+          <img src={Atomic10Logo} className="logo" alt="Atomic10 Studio logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>Vite + React + Tailwind + Firebase Template</h1>
+      <p className="max-w-96 mx-auto my-[1rem] text-2xl text-left">
+        Follow the steps below to get started:
       </p>
+      <ul className="max-w-80 mx-auto text-left">
+        <li className="list-disc">Add Firebase variables to .env</li>
+        <li className="list-disc">Update package.json and index.html</li>
+        <li className="list-disc">
+          Install dependencies <code>npm install</code>
+        </li>
+        <li className="list-disc">
+          Run <code>npm run dev</code>
+        </li>
+      </ul>
     </>
   )
 }
